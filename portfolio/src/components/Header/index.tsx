@@ -1,11 +1,11 @@
-import { CaretLeft, CaretRight } from 'phosphor-react'
+import { RxCaretRight, RxCaretLeft } from "react-icons/rx";
 import * as S from './style' 
 
 
 const Header = () => {
     return (
 
-      <><S.HeaderContainer><h1> <CaretLeft size={32} />Leonardo.dev <CaretRight size={32}/></h1> <S.NavHeader>
+      <><S.HeaderContainer><h1> <RxCaretLeft size={32} />Leonardo.dev < RxCaretRight size={32}/></h1> <S.NavHeader>
           <ul>
             <li>
               Projetos
@@ -16,6 +16,7 @@ const Header = () => {
             <li>
               Contatos
             </li>
+       
           </ul>
         </S.NavHeader> </S.HeaderContainer>
        </>
