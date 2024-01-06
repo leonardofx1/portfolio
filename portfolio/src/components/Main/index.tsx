@@ -1,6 +1,7 @@
 import * as S from './styled'
 
-import leo from '../../../public/leo.png'
+import leo from '../../assets/leo.png'
+import Skill from '../Skills'
 
 
 
@@ -13,11 +14,10 @@ const Main = () => {
                 <S.MyImg src={leo} alt="" />
             </S.ImgContainer>
            <S.Introducing>
-            <p>ola eu sou,</p>
-            <h2>Leonardo </h2>
-           <h3>Desenvolvedor Front-End</h3>
+            <p>Olá, sou um entusiasta desenvolvedor front-end dedicado à criação de designs responsivos e modernos. Meu foco vai além da estética, priorizando a usabilidade e a experiência do usuário. Estou empenhado em entregar software de qualidade, adotando uma abordagem abrangente que tira o melhor proveito do ecossistema React.</p>
            </S.Introducing>
           </div>
+          <Skill />
         </S.MainContainer>
     )
 }

@@ -26,15 +26,14 @@ export const MainContainer = styled.main`
 `;
 
 export const Introducing = styled.section`
-  display: flex;
+ 
   flex-direction: column;
 
   max-width: 350px;
 
   width: 100%;
-  height: 120px;
-  max-height: auto;
-  line-height: 0px;
+
+
   color: ${thema.color.textGray300};
   font-size: 1.5rem;
 
@@ -42,12 +41,7 @@ export const Introducing = styled.section`
   padding: 1rem;
   border: 3px solid ${thema.color.purpleligth};
   border-radius: 5px;
-  h2,
-  h3,
-  p {
-    margin: 0;
-    padding: 0;
-  }
+ 
 `;
 
 export const ImgContainer = styled.section`
