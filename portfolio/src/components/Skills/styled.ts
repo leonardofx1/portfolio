@@ -28,7 +28,7 @@ export const Title = styled.h1 `
     color:${thema.color.purpleligth};
 
     padding:1rem;
-    border-image: linear-gradient(to right, ${thema.color.textGray300}, ${thema.color.purpleligth}) 1;
+    border-image: linear-gradient(to right,${thema.color.primaryColorBold}, ${thema.color.purpleligth}, ${thema.color.primaryColorBold}) 1;
     border-top: 4px  solid transparent;
     border-bottom: 4px  solid ;
 `
@@ -82,6 +82,6 @@ export const SkillCardBody = styled.ul `
     li img {
         width: 200px;
         height:100%;
-        object-fit:contain ;
+        object-fit:cover ;
     }
 `
