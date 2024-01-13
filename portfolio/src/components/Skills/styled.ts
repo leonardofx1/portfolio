@@ -4,6 +4,9 @@ import { thema } from '../../styles/thema'
 
 
 export const SkillContainer = styled.section `
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     box-sizing:border-box;
     max-width: 950px;
     width: 100%;
@@ -15,13 +18,13 @@ export const SkillContainer = styled.section `
     margin:1rem;
     padding:1rem;
 
-
     border-radius:5px;
 
-    padding: 1rem;
+
 `
 
 export const Title = styled.h1 `
+    display: block;
     font-size:2rem;
     width: 100%;
     text-align: center;
@@ -51,37 +54,47 @@ export const ReactIcon = styled.span `
 
 export const SkillCardBody = styled.ul `
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
     align-items: center;
     background-color: ${thema.color.primaryColorBold};
     padding:0;
 
     height: 300px;
-    width:200px;
-
+    max-width:400px;
+    width:100%;
+    position:relative;
     border-radius:15px;
     overflow: hidden;
-    gap:5px;
 
     box-shadow: 1px 1px 5px ${thema.color.purpleBold};
+
+    &:hover li:not(:has(img)) {
+        transform: translateY(0px);
+    }
     li {
         list-style: none;
         
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: 100%;
         text-align: center;
-
-        color:${thema.color.textGray300}
+        font-weight: bold;
+        color:white;
     }
     li:not(:has(img)) {
-    
+        position: absolute;
         height:100%;
+        background-color: rgb(0,0,0, .5);
+        transform: translateY(300px);
+        transition: all 0.4s;
+        display:flex;
+        justify-content: center;
+        align-items: center;
 
+        padding: 1rem;
     }
     li img {
-        width: 200px;
+        width: 100%;
         height:100%;
-        object-fit:cover ;
+        object-fit:contain ;
     }
 `

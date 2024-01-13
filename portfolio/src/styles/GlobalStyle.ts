@@ -10,8 +10,10 @@ export const GlobalStyle = createGlobalStyle`
         border: 0;
         font-size: 10px;
         font-weight: normal;
-        box-sizing: border-box;
-
         background-color: ${thema.color.grayBold};
+    }
+    * {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
     }
 `
