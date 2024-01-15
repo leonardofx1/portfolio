@@ -2,6 +2,7 @@ import * as S from './styled'
 
 import leo from '../../assets/leo.png'
 import Skill from '../Skills'
+import Projects from '../Projects'
 
 
 
@@ -18,6 +19,7 @@ const Main = () => {
            </S.Introducing>
           </div>
           <Skill />
+          <Projects />
         </S.MainContainer>
     )
 }

@@ -1,22 +1,19 @@
-import * as S from './styled'
+import * as S from "./styled";
 
+import zustand from "../../assets/zustand.png";
 
-import zustand from '../../assets/zustand.png'
-
-import styled from '../../assets/styled.png'
-import SkillCard from './components/SkillCard'
+import styled from "../../assets/styled.png";
+import Card from "../Card";
+import Title from "../Tittle";
 const Skill = () => {
+  return (
+    <S.SkillContainer>
+      <Title>Habilidades</Title>
 
+      <Card img={zustand} description="oldsgbfda" />
+      <Card img={styled} description="ola" />
+    </S.SkillContainer>
+  );
+};
 
-
-    return (
-        <S.SkillContainer>
-        <S.Title>Habilidades</S.Title>
-     
-            <SkillCard img={zustand} description='ola' />
-            <SkillCard img={styled} description='ola'/>
-        </S.SkillContainer>
-    )
-}
-
-export default Skill
+export default Skill;
