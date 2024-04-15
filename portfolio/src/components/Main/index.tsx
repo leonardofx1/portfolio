@@ -15,7 +15,7 @@ const Main = () => {
                 <S.MyImg src={leo} alt="" />
             </S.ImgContainer>
            <S.Introducing>
-            <p>Olá, sou um entusiasta desenvolvedor front-end dedicado à criação de designs responsivos e modernos. Meu foco vai além da estética, priorizando a usabilidade e a experiência do usuário. Estou empenhado em entregar software de qualidade, adotando uma abordagem abrangente que tira o melhor proveito do ecossistema React.</p>
+            <p>Olá, sou o Leonardo desenvolvedor front-end dedicado à criação de designs responsivos e modernos. Com as principais tecnologias do mercado.</p>
            </S.Introducing>
           </div>
           <Skill />

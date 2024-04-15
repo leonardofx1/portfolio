@@ -1,8 +1,10 @@
 import * as S from "./styled";
 
-import zustand from "../../assets/zustand.png";
-
-import styled from "../../assets/styled.png";
+import react from "../../assets/react.png";
+import drizzle from "../../assets/drizzle.jpg";
+import next from "../../assets/next.png";
+import sass from "../../assets/sass.png";
+import typescript from "../../assets/typescript.jpg";
 import Card from "../Card";
 import Title from "../Tittle";
 const Skill = () => {
@@ -10,8 +12,12 @@ const Skill = () => {
     <S.SkillContainer>
       <Title>Habilidades</Title>
 
-      <Card img={zustand} description="oldsgbfda" />
-      <Card img={styled} description="ola" />
+      <Card img={react} description="React" />
+
+      <Card img={drizzle} description="Drizzle ORM" />
+      <Card img={next} description="NextJs" />
+      <Card img={sass} description="Sass" />
+      <Card img={typescript} description="Typescript" />
     </S.SkillContainer>
   );
 };

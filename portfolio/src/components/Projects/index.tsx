@@ -9,7 +9,7 @@ const Projects = () => {
     <>
     <S.ProjectContainer>
         <Title>Projetos</Title>
-      <Card img={fxmoney} stacks={['mongoDb', 'javascript','mongoDb','mongoDb','mongoDb','mongoDb','mongoDb','mongoDb','mongoDb',]}/> 
+      <Card img={fxmoney} stacks={['javascript', 'firebase']}/> 
     </S.ProjectContainer>
     </>
   )

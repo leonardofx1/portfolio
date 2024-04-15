@@ -17,6 +17,8 @@ export const SkillContainer = styled.section `
     padding:1rem;
 
     border-radius:5px;
+
+    gap: 10px;
 `
 
 

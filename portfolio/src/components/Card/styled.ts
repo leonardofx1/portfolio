@@ -3,20 +3,23 @@ import { thema } from "../../styles/thema";
 
 export const SkillCardBody = styled.ul`
   display: flex;
-
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
   align-items: center;
   background-color: ${thema.color.primaryColorBold};
   padding: 0;
 
-  height: 300px;
-  max-width: 400px;
+  height:250px;
+  max-width: 250px;
   width: 100%;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
 
-  box-shadow: 1px 1px 5px ${thema.color.purpleBold};
 
+
+  &:hover {
+    clip-path: circle(50% at 50% 50%);
+  }
   &:hover li:not(:has(img)) {
     transform: translateY(0px);
   }
@@ -44,28 +47,29 @@ export const SkillCardBody = styled.ul`
   li img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+
   }
+
 `;
 
 export const Stack = styled.li`
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   flex-wrap: wrap;
   width: 100%;
-  height: 80%!important;
+  height: 100%!important;
 
-  max-height: 100%;
+
   gap: 5px;
-  box-shadow: inset 250px 250px 250px rgb(0, 0, 0, 0.5),
-    inset 250px 250px 250px rgb(0, 0, 0, 0.5);
+
   span {
-    padding: 10px;
+    min-width:80px;
+    padding: 5px;
     color: ${thema.color.white};
     font-weight: bold;
     background-color: ${thema.color.textGray300};
 
     border-radius: 5px;
+
+    font-size:small;
   }
 `;
