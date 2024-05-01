@@ -4,7 +4,7 @@ import leo from '../../assets/leo.png'
 import Skill from '../Skills'
 import Projects from '../Projects'
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 
 
 const Main = () => {
@@ -17,6 +17,7 @@ const Main = () => {
                 <S.containerMidia>
                     <FaGithub size={50}/>
                     <FaLinkedin size={50} />
+                    <FaWhatsappSquare size={50}/>
                     <button> Download CV</button>
                 </S.containerMidia>
             </S.ImgContainer>

@@ -93,6 +93,7 @@ svg {
       & svg:hover {
 
         color: ${thema.color.purpleBold};
+        
 
       }
 `
@@ -106,3 +107,6 @@ export const MyImg = styled.img`
   position: absolute;
   z-index: 5;
 `;
+
+
+
