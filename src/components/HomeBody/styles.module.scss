@@ -1,0 +1,40 @@
+@import'../../styles/variables.module.scss';
+
+
+.containerMain {
+    display: flex;
+
+    align-items: center;
+
+    height: 90vh;
+    width: 100%;
+
+    background-color: $primary-color;
+
+}
+
+.imgContainer {
+    height: 100%;
+    width: 600px;
+    position: relative;
+    img {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+
+        bottom: 0;
+        left: 25px;
+    }
+}
+
+.title {
+    color:white;
+
+    font-size: 3rem;
+
+    padding: 15px;
+
+    border-bottom:  5px solid $purple-color;
+
+    
+}
