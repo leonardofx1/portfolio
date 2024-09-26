@@ -17,13 +17,13 @@
     height: 100%;
     width: 600px;
     position: relative;
+  
+    overflow: hidden;
     img {
-        width: 500px;
-        height: 500px;
-        position: absolute;
-
-        bottom: 0;
-        left: 25px;
+        display: inline-block;
+        width: 800px;
+        height: 800px;
+       
     }
 }
 
@@ -37,4 +37,28 @@
     border-bottom:  5px solid $purple-color;
 
     
+}
+.wrraperTitle {
+    display: flex;
+ 
+
+    flex-direction: column;
+    gap: 15px;
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+.wrraperImg {
+    display: flex;
+
+    gap: 15px;
+
+    img {
+        width: 70px;
+        height: 70px;
+
+        border-radius:50%;
+    }
 }
