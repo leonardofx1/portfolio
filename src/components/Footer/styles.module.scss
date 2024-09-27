@@ -1,0 +1,44 @@
+@import '../../styles/variables.module.scss';
+
+
+.footer {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    min-height: 50px;
+
+    background-color: rgba(0, 0, 0, 0.932);
+    color: white;
+}
+
+.wrapperNetwork {
+    display: flex;
+
+    width: auto;
+
+    gap: 15px;
+    
+    li {
+        border-radius: 50%;
+        transition: all 250ms;
+        
+        &:hover {
+            box-shadow: 1px 1px 20px $purple-color;
+
+        }
+    }
+
+    li svg {
+
+        width: 30px;
+        height: 30px;
+
+        background-color: $purple-color;
+        border-radius: 50%;
+
+        cursor:pointer;
+       
+    }
+}

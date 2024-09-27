@@ -15,14 +15,11 @@ export const HomeBody = () => {
     return (
         <main className={styles.containerMain}>
             <div className={styles.imgContainer}>
-
                 <Image src={leo} alt='my image' />
-                
-
             </div>
-           <div className={styles.wrraperTitle}>
+           <div className={styles.wrapperTitle}>
            <h2 className={styles.title}>Olá, eu sou o Leonardo. <br/> Desenvolvedor FullStack.</h2>
-            <div className={styles.wrraperImg}>
+            <div className={styles.wrapperImg}>
             <Image src={drizzle} height={30} unoptimized width={30} alt='my image' />
             <Image src={next} height={30} unoptimized width={30} alt='my image' />
             <Image src={react} height={30} unoptimized width={30} alt='my image' />
