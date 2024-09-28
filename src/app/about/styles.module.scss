@@ -1,0 +1,51 @@
+@import '../../styles/variables.module.scss';
+
+.main {
+    display: flex;
+
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem;
+
+    gap: 1rem;
+}
+.wrapperAbout {
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
+    margin: 0 auto;
+    gap: 5rem;
+  
+    div {
+      display: flex;
+      width: 100%;
+      background-color: rgb(101, 102, 102);
+      font-weight: bold;
+      height: 500px;
+      position: relative;
+    }
+  
+    div:nth-child(odd) p {
+      background-color: rgb(219, 80, 62);
+      border-radius: 15px;
+      padding: 1rem;
+      position: absolute;
+      width: 400px;
+    }
+  
+    div:nth-child(even) p {
+      background-color: rgb(62, 219, 219);
+      border-radius: 15px;
+      padding: 1rem;
+      width: 400px;
+      max-height: 300px;
+      position: absolute;
+      right: 0;
+    }
+  }
+  
