@@ -1,64 +1,48 @@
+import { TsParticles } from "@/components/TsparticlesComponent/tsparticles";
 import styles from "./styles.module.scss";
+import Image from "next/image";
+import leo from "@/assets/leo.png";
+import anki from "@/assets/anki.png";
 
 export default function About() {
   return (
     <main className={styles.main}>
+      <TsParticles />
       <section className={styles.wrapperAbout}>
-        <div>
+        <article className={styles.containerImg}>
+          <div className={styles.wrapperImg}>
+            {" "}
+            <Image src={leo} alt="minha foto." />
+          </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-            officiis mollitia. Repellat minus maiores tenetur sit nulla?
-            Repellendus, fugiat, veniam consequatur quae quisquam accusantium
-            voluptates placeat quasi itaque blanditiis expedita.
+            Olá! Meu nome é <span>Leonardo</span> e sou{" "}
+            <span>desenvolvedor Full Stack.</span>
+            Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na
+            <span>UNOPAR</span>, onde estou aprimorando minhas habilidades e
+            conhecimentos em desenvolvimento de software.
           </p>
-        </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-            officiis mollitia. Repellat minus maiores tenetur sit nulla?
-            Repellendus, fugiat, veniam consequatur quae quisquam accusantium
-            voluptates placeat quasi itaque blanditiis expedita.
-          </p>
-        </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-            officiis mollitia. Repellat minus maiores tenetur sit nulla?
-            Repellendus, fugiat, veniam consequatur quae quisquam accusantium
-            voluptates placeat quasi itaque blanditiis expedita.
-          </p>
-        </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-            officiis mollitia. Repellat minus maiores tenetur sit nulla?
-            Repellendus, fugiat, veniam consequatur quae quisquam accusantium
-            voluptates placeat quasi itaque blanditiis expedita.
-          </p>
-        </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-            officiis mollitia. Repellat minus maiores tenetur sit nulla?
-            Repellendus, fugiat, veniam consequatur quae quisquam accusantium
-            voluptates placeat quasi itaque blanditiis expedita. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Maxime et accusantium
-            quod iusto. Pariatur expedita numquam odit ratione, labore eligendi
-            quos laborum dolores ea atque cupiditate hic fugiat impedit
-            asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Excepturi hic, quod animi mollitia autem labore velit nemo illo
-            doloribus ipsum vel magni nisi fuga error quos repellendus corrupti
-            optio minima?
-          </p>
-        </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-            officiis mollitia. Repellat minus maiores tenetur sit nulla?
-            Repellendus, fugiat, veniam consequatur quae quisquam accusantium
-            voluptates placeat quasi itaque blanditiis expedita.
-          </p>
-        </div>
+        </article>
+
+        <article className={styles.wrapperAnkiImg}>
+          <h3>Método de estudo.</h3>
+
+          <div>
+            <Image
+              className={styles.imgAnki}
+              src={anki}
+              alt="aplicativo anki."
+            />
+            <p>
+              Utilizo ferramentas de revisão espaçada, como o <span>Anki</span>, para
+              garantir que o conhecimento técnico seja constantemente aprimorado
+              e aplicado de forma eficiente em projetos práticos. Isso me
+              permite não apenas reter o conteúdo, mas também evoluir
+              continuamente como <span>desenvolvedor Full Stack</span>, com mais de
+              <span>4.000</span>
+               revisões realizadas até o momento.
+            </p>
+          </div>
+        </article>
       </section>
     </main>
   );

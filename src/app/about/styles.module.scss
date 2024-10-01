@@ -1,51 +1,113 @@
 @import '../../styles/variables.module.scss';
 
 .main {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-    max-height: auto;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  max-height: auto;
 
-    background-color: $primary-color;
-    color: white;
-    padding: 1rem;
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
 
-    gap: 1rem;
+  gap: 1rem;
 }
+
 .wrapperAbout {
-    display: flex;
-    flex-direction: column;
-    max-width: 940px;
-    margin: 0 auto;
-    gap: 5rem;
-  
-    div {
-      display: flex;
-      width: 100%;
-      background-color: rgb(101, 102, 102);
-      font-weight: bold;
-      min-height: 500px;
-      position: relative;
-    }
-  
-    div:nth-child(odd) p {
-      background-color: rgb(219, 80, 62);
-      border-radius: 15px;
-      padding: 1rem;
-      position: absolute;
-      width: 400px;
-    }
-  
-    div:nth-child(even) p {
-      background-color: rgb(62, 219, 219);
-      border-radius: 15px;
-      padding: 1rem;
-      width: 400px;
-      max-height: 300px;
-      position: absolute;
-      right: 0;
-    }
+  display: flex;
+  flex-direction: column;
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+
+
+  background-color: rgba(77, 80, 80, 0.336);
+
+}
+
+.wrapperImg {
+  min-width: 200px;
+  border-radius: 50%;
+  background-color: $purple-color;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 1px 1px 20px $purple-color;
   }
-  
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+}
+
+.containerImg {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  min-height: 300px;
+  position: relative;
+
+
+  & p {
+    border-radius: 15px;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  p span {
+    color: $purple-color;
+  }
+}
+
+.wrapperAnkiImg {
+
+
+  margin: 2rem 0 0 0;
+
+  h3 {
+    display: block;
+    width: 100%;
+    color: $purple-color;
+
+    margin: 2rem 0;
+
+    font-size:1.5rem;
+    text-align: center;
+  }
+
+  div {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    p {
+      max-width: 400px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      span {
+        color: $purple-color;
+      }
+    }
+
+
+  }
+}
+
+.imgAnki {
+  max-width: 400px;
+  height: 400px;
+
+  min-height: auto;
+}
