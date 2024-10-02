@@ -1,0 +1,98 @@
+@import'../../styles/variables.module.scss';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+
+    background-color: $primary-color;
+    color: white;
+
+
+    h3 {
+        text-align: center;
+
+        width: 100vw;
+        padding: 2rem;
+
+        background-color: $purple-color;
+        font-weight: bold;
+
+        font-size: 2rem;
+
+        border-bottom: $purple-color 1px solid;
+        margin : 5rem 0 ;
+
+    }
+}
+
+.wrapperProjects {
+    display: flex;
+    width: 100%;
+    max-width: 940px;
+    height: auto;
+    
+    overflow: hidden;
+
+    margin: 3rem 0;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+
+
+}
+
+.wrapperCard {
+    display: flex;
+
+    flex-direction: column;
+
+    border-radius: 15%;
+    gap: 15px;
+    
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        border-bottom: 3px solid $purple-color;
+        padding: .5rem;
+        &:hover svg {
+            color: $purple-color;
+        }
+    }
+
+}
+
+.cardHeader {
+    display: flex;
+    width: 280px;
+    height: 350px;
+
+    img {
+        width: 100%;
+        height: 100%;
+
+        filter: grayscale(80%);
+        transition: all 200ms ease;
+        cursor: pointer;
+        border-radius: 15px;
+
+        &:hover {
+            filter: none;
+
+            transform: scale(1);
+        }
+
+    }
+
+   
+
+}

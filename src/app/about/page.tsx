@@ -11,7 +11,7 @@ export default function About() {
       <section className={styles.wrapperAbout}>
         <article className={styles.containerImg}>
           <div className={styles.wrapperImg}>
-            {" "}
+       
             <Image src={leo} alt="minha foto." />
           </div>
           <p>

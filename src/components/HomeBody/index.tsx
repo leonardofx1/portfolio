@@ -7,7 +7,7 @@ import typescript from '../../assets/typescript.jpg'
 import react from '../../assets/react.png'
 import node from '../../assets/node.png'
 import postgresql from '../../assets/postgresql.png'
-import { TsParticles } from '../TsparticlesComponent/tsparticles'
+
 
 
 export const HomeBody = () => {
@@ -20,7 +20,7 @@ export const HomeBody = () => {
             </div>
            <div className={styles.wrapperTitle}>
            <h2 className={styles.title}>Olá, eu sou o Leonardo. <br/> Desenvolvedor FullStack.</h2>
-           <TsParticles/>
+           
             <div className={styles.wrapperImg}>
             <Image src={drizzle} height={30} unoptimized width={30} alt='my image' />
             <Image src={next} height={30} unoptimized width={30} alt='my image' />
