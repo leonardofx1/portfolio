@@ -57,16 +57,10 @@
     gap: 15px;
     
     h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-
         border-bottom: 3px solid $purple-color;
         padding: .5rem;
-        &:hover svg {
-            color: $purple-color;
-        }
+        color: white;
+        text-align: center;
     }
 
 }
