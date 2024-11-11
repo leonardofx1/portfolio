@@ -24,6 +24,7 @@
 
 
   background-color: rgba(77, 80, 80, 0.336);
+  
 
 }
 
@@ -33,20 +34,23 @@
   background-color: $purple-color;
   overflow: hidden;
 
-  &:hover {
+
     box-shadow: 1px 1px 20px $purple-color;
-  }
+  
 
   img {
     width: 200px;
     height: 200px;
   }
 
+
 }
 
 .containerImg {
   display: flex;
   width: 100%;
+
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -59,6 +63,7 @@
     border-radius: 15px;
     padding: 1rem;
     font-size: 1.5rem;
+    min-width: 300px;
   }
 
   p span {
@@ -70,6 +75,7 @@
 
 
   margin: 2rem 0 0 0;
+  width: 99%;
 
   h3 {
     display: block;
@@ -96,6 +102,8 @@
       max-width: 400px;
       font-size: 1.5rem;
       font-weight: bold;
+
+      text-align: center;
       span {
         color: $purple-color;
       }
@@ -106,8 +114,8 @@
 }
 
 .imgAnki {
-  max-width: 400px;
-  height: 400px;
-
+  max-width: 300px;
+  height: 300px;
+  width: 100%;
   min-height: auto;
 }
