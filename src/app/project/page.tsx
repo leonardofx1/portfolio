@@ -1,8 +1,8 @@
 
 import styles from "./styles.module.scss";
 
-import t from "@/assets/t.png";
-import { CardProject } from "./ProjectCard";
+
+import { SwiperContainer } from "@/components/Swiper";
 
 export default function Project() {
   return (
@@ -10,7 +10,8 @@ export default function Project() {
       <h3>Projetos </h3>
 
       <section className={styles.wrapperProjects}>
-       <CardProject imgSrc={t} link="o"  title="oi"/>
+     
+       <SwiperContainer key={5}/>
       </section>
 
       

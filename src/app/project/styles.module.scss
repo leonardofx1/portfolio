@@ -50,6 +50,9 @@
 
 .wrapperCard {
     display: flex;
+    width: 380px;
+    min-width: none;
+
 
     flex-direction: column;
 
@@ -65,10 +68,12 @@
 
 }
 
-.cardHeader {
+.wrapperImg {
     display: flex;
-    width: 280px;
+    width: 380px;
     height: 350px;
+
+    min-width: none;
 
     img {
         width: 100%;

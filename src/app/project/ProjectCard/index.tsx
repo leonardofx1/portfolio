@@ -16,8 +16,8 @@ export const CardProject = ({ imgSrc, link, title }: CardProps) => {
       transition={{ duration: 1 }}
     >
       <Link href={link} className={styles.wrapperCard}>
-        <section className={styles.cardHeader}>
-          <Image src={imgSrc} alt="projeto fxmoney" />
+        <section className={styles.wrapperImg}>
+          <Image unoptimized src={imgSrc} alt="title" />
         </section>
         <motion.h2
           initial={{ x: 200, opacity: 0 }}
