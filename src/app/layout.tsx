@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
-        <TsParticles />
+      
         {children}
         <Footer />
       </body>

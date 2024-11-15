@@ -26,6 +26,17 @@ export const CardProject = ({ imgSrc, link, title }: CardProps) => {
         >
           {title}
         </motion.h2>
+        <motion.p
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className={styles.description}
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+          suscipit excepturi asperiores architecto rerum ipsum sint,
+          perspiciatis sit distinctio amet, incidunt debitis aperiam cum rem
+          
+        </motion.p>
       </Link>
     </motion.div>
   );
