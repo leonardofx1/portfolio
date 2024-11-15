@@ -16,14 +16,16 @@
 .wrapperNetwork {
     display: flex;
 
+    flex-wrap: wrap;
+
     width: auto;
 
     gap: 15px;
-    
+
     li {
         border-radius: 50%;
         transition: all 250ms;
-        
+
         &:hover {
             box-shadow: 1px 1px 20px $purple-color;
 
@@ -38,7 +40,7 @@
         background-color: $purple-color;
         border-radius: 50%;
 
-        cursor:pointer;
-       
+        cursor: pointer;
+
     }
 }

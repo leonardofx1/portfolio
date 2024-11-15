@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "../styles/globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import {TsParticles} from "../components/TsparticlesComponent/tsparticles"
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",

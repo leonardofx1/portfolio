@@ -1,0 +1,16 @@
+@import'../../../../styles/variables.module.scss';
+
+.containerTecs {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    gap: 0 5px;
+    margin: 5px 0;
+}
+.span {
+    padding: .5rem;
+    background-color: $primary-color;
+    color: $purple-color;
+    font-weight: 400;
+}

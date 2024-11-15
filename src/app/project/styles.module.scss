@@ -13,11 +13,12 @@
     color: white;
 
     height: auto;
+    overflow: hidden;
 
     h3 {
         text-align: center;
 
-        width: 100vw;
+        width: 100%;
         padding: 2rem;
 
         background-color: $purple-color;
@@ -28,7 +29,7 @@
         font-size: 2rem;
 
         border-bottom: $purple-color 1px solid;
-        margin : 5rem 0 ;
+        margin: 5rem 0;
 
     }
 }
@@ -36,10 +37,11 @@
 .wrapperProjects {
     display: flex;
     width: 100%;
-    max-width: 940px;
+    max-width: 98%;
+    height: auto;
 
-    
-    overflow: hidden;
+    flex-wrap: wrap;
+
 
     margin: 3rem 0;
 
@@ -47,7 +49,7 @@
     align-items: center;
 
     gap: 2rem;
-    
+
 
 }
 
@@ -66,20 +68,24 @@
     padding: 1rem;
 
     min-height: 500;
-    
+
     h2 {
         border-bottom: 3px solid $purple-color;
         padding: .5rem;
         color: white;
-        
+
+    }
+    @media screen and (max-width:600px) {
+        width: 95%;
+        margin: auto;
     }
 
 }
 
 .wrapperImg {
-    display: flex;
+    display: inline-block;
     height: 320px;
-    
+
     min-width: none;
 
     img {
@@ -87,13 +93,69 @@
         height: 100%;
         border-radius: 5px;
     }
+   
 }
 
 .description {
     width: 100%;
     height: auto;
-    color:#ADADAD;
+    color: #ADADAD;
     font-size: 1.2rem;
-    line-height: 2rem;
+  
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.containerTecs {
+    display: flex;
+    align-items: baseline;
+
+    width: 100%;
+    gap: 5px;
+    border-bottom: $purple-color 1px solid ;
+    span {
+        text-wrap: nowrap;
+    }
+}
+
+.wrapperBtn {
+    width: 100%;
+    display: flex;
+
+    gap: 5px;
+}
+.repository, .site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: .5rem;
+    border-radius: 5px;
+
+    color: white;
+    font-weight: 400;
+}
+.repository {
+    width: 48%;
+    border: none;
+    background-color: $purple-color;
+
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+    &:hover {
+        border: 1px solid $purple-color;
+        background-color: transparent;
+    }
+
+}
+.site {
+    width: 48%;
+    border: 1px solid $purple-color;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: all 300ms ease-in-out;
+    &:hover {
+        background-color: $purple-color;
+    }
 }
