@@ -62,14 +62,19 @@
     flex-direction: column;
 
     gap: 15px;
-    height: auto;
+
 
     background-color: #0B0B0B;
     padding: 1rem;
 
-    min-height: 500;
+
+    height: 800px;
+
+    justify-content: space-between;
 
     h2 {
+        align-self: baseline;
+
         border-bottom: 3px solid $purple-color;
         padding: .5rem;
         color: white;

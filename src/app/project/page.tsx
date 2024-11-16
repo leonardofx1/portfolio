@@ -15,13 +15,19 @@ export default function Project() {
           imgSrc={fxmoney}
           linkSite="https://fxmoney.netlify.app/"
           linkRepository="https://github.com/leonardofx1/FxMoney/tree/main/fxmoney"
-          description="O objetivo principal da FX Money foi criar uma ferramenta intuitiva e eficiente para gerenciar as finanças dos usuários."
+          description="O objetivo principal da FX Money foi criar uma ferramenta intuitiva e eficiente para gerenciar os gastos pessoais dos usuários."
+          frontEndTecs={['React','Typescript','Zod','Styled-components']}
+     
+          hosting="Netlify"
         />
         <CardProject
           title="Desentupidora Freitas"
           imgSrc={desentupidora}
           linkSite="https://www.desentupidorafreitas.online/"
-          description="Projeto Freelancer para a Desentupidora Freitas com o objetivo de atrair mais clientes."
+          description="Projeto Freelancer para a Desentupidora Freitas com o objetivo de atrair mais clientes.Aumentando o faturamento da empresa."
+          frontEndTecs={['React','Typescript','Sass']}
+       
+          hosting="Hostgator"
         />
         <CardProject
           title="Fx estore"
@@ -37,3 +43,5 @@ export default function Project() {
     </main>
   );
 }
+
+
