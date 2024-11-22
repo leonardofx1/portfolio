@@ -29,7 +29,9 @@ export const Header = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <Link href="/">Inicio</Link>
+            <Link href="/"  onClick={
+                handleOpenClosedMenu
+              }>Inicio</Link>
           </motion.li>
 
              <motion.li
@@ -37,14 +39,18 @@ export const Header = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <Link href="./about">Sobre</Link>
+            <Link href="./about"  onClick={
+                handleOpenClosedMenu
+              }>Sobre</Link>
           </motion.li>
           <motion.li
             initial={{ y: 220, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <Link className="focused" href="./project">
+            <Link className="focused" href="./project"  onClick={
+                handleOpenClosedMenu
+              }>
               Projetos
             </Link>
           </motion.li>
