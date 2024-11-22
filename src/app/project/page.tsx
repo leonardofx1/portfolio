@@ -32,8 +32,8 @@ export default function Project() {
         <CardProject
           title="Fx estore"
           imgSrc={estore}
-          linkSite="https://estore-eight-omega.vercel.app/"
-          linkDevelopment="https://github.com/leonardofx1/estore"
+          linkDevelopment="https://estore-eight-omega.vercel.app/"
+          linkRepository="https://github.com/leonardofx1/estore"
           description="O FX estore é uma loja online que desenvolvi como um projeto pessoal para explorar e aprimorar minhas habilidades em desenvolvimento web e e-commerce."
           frontEndTecs={['Nextjs','Typescript','Sass']}
           backEndTecs={['Nodejs','PostgreSql','Drizzle-Orm','Fastify','Typescript']}

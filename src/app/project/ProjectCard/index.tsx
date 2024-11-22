@@ -88,7 +88,7 @@ export const CardProject = ({
           )}
           {!!linkDevelopment?.length && (
             <Link
-              href={linkRepository}
+              href={linkDevelopment}
               target="_blank"
               className={styles.development}
             >
