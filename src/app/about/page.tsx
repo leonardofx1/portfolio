@@ -1,4 +1,4 @@
-import { TsParticles } from "@/components/TsparticlesComponent/tsparticles";
+
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import leo from "@/assets/leo.png";
@@ -7,7 +7,7 @@ import anki from "@/assets/anki.png";
 export default function About() {
   return (
     <main className={styles.main}>
-      <TsParticles />
+ 
       <section className={styles.wrapperAbout}>
         <article className={styles.containerImg}>
           <div className={styles.wrapperImg}>
