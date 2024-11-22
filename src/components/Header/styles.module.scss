@@ -40,20 +40,25 @@
         padding: .5rem;
     }
 
+  
     li a {
+        height: 3rem;
+        padding: 2rem;
+        font-weight: 600;
+        transition: all ease-in 300ms;
         color: white;
+    }
+    li a:focus{
+ 
+      
+        border-bottom: .2rem solid $purple-color;
     }
 }
 
-.active {
-    height: 3rem;
-    border-bottom: .2rem solid $purple-color;
-
-}
 
 .menu {
     display: none;
-    color: $purple-color;
+    color: white;
     font-size: 2rem;
     cursor: pointer;
 }

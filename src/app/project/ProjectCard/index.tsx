@@ -6,6 +6,7 @@ import { ShowTecs } from "./ShowTecs";
 interface CardProps {
   linkSite?: string;
   linkRepository?: string;
+  linkDevelopment?:string;
   imgSrc: StaticImageData;
   title: string;
   description: string;
@@ -18,6 +19,7 @@ export const CardProject = ({
   imgSrc,
   linkRepository = "",
   linkSite = "",
+  linkDevelopment,
   title,
   description,
   frontEndTecs,
@@ -82,6 +84,15 @@ export const CardProject = ({
               className={styles.repository}
             >
               Ir para o Repositório
+            </Link>
+          )}
+          {!!linkDevelopment?.length && (
+            <Link
+              href={linkRepository}
+              target="_blank"
+              className={styles.development}
+            >
+              Em desenvolvimento
             </Link>
           )}
         </motion.div>
